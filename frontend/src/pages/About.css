@@ -1,0 +1,68 @@
+.about-page {
+  padding: 48px 0 64px;
+}
+
+.about__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  color: var(--color-text);
+}
+
+.about__section {
+  margin-bottom: 28px;
+}
+
+.about__section p {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.about__heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 10px;
+}
+
+.about__steps {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.about__steps li {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  line-height: 1.7;
+  margin-bottom: 6px;
+  padding-left: 4px;
+}
+
+.about__disclaimer-section {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+}
+
+.about__privacy-section {
+  padding-top: 4px;
+}
+
+.about__privacy-section p {
+  color: var(--color-text-secondary);
+  font-size: 0.88rem;
+}
+
+@media (max-width: 640px) {
+  .about-page {
+    padding: 32px 0 48px;
+  }
+
+  .about__title {
+    font-size: 1.4rem;
+  }
+}

@@ -1,0 +1,120 @@
+.result-section {
+  padding-bottom: 48px;
+}
+
+.result-card {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 28px 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid;
+  text-align: center;
+}
+
+.result-card--churn {
+  background-color: var(--color-danger-bg);
+  border-color: var(--color-danger-border);
+}
+
+.result-card--no-churn {
+  background-color: var(--color-success-bg);
+  border-color: var(--color-success-border);
+}
+
+.result-card__label-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+}
+
+.result-card__title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+
+.result-card--churn .result-card__title {
+  color: var(--color-danger);
+}
+
+.result-card--no-churn .result-card__title {
+  color: var(--color-success);
+}
+
+/* Probability bar */
+.result-card__probability {
+  margin-bottom: 20px;
+}
+
+.result-card__probability-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 8px;
+}
+
+.result-card__bar-track {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.result-card__bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.5s ease-out;
+}
+
+.result-card--churn .result-card__bar-fill {
+  background-color: var(--color-danger);
+}
+
+.result-card--no-churn .result-card__bar-fill {
+  background-color: var(--color-success);
+}
+
+.result-card__probability-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.result-card--churn .result-card__probability-value {
+  color: var(--color-danger);
+}
+
+.result-card--no-churn .result-card__probability-value {
+  color: var(--color-success);
+}
+
+.result-card__message {
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.result-card__disclaimer {
+  font-size: 0.78rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 12px;
+}
+
+@media (max-width: 640px) {
+  .result-card {
+    padding: 22px 20px;
+  }
+
+  .result-card__title {
+    font-size: 1.15rem;
+  }
+}
