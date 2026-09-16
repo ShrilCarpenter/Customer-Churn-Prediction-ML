@@ -1,16 +1,41 @@
-# React + Vite
+# Customer Churn Predictor — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+The user-facing client application for the Customer Churn Prediction System, built with **React 19**, **Vite**, and custom responsive CSS.
 
-Currently, two official plugins are available:
+> 🌐 **Live URL**: [https://customer-churn-prediction-usingml.vercel.app/](https://customer-churn-prediction-usingml.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Dynamic Form**: 19 customer features organized into intuitive demographic, service, and billing sections.
+- **One-Click Pre-fill**: "Fill Example Profile" button for rapid demonstration and validation.
+- **Visual Probability Meter**: Animated percentage gauge with color-coded risk levels.
+- **Client-Side Routing**: Built with `react-router-dom` with routes for `/` (Prediction Tool) and `/about` (Model Overview & Insights).
+- **Vercel SPA Ready**: Configured with `vercel.json` rewrite rules for seamless routing and page refreshes.
 
-## Expanding the Oxlint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Environment Variables
+
+| Variable | Description | Default (Local) | Production (Vercel) |
+| :--- | :--- | :--- | :--- |
+| `VITE_API_URL` | Base URL of the FastAPI backend service | `http://localhost:8000` | `https://<your-render-service>.onrender.com` |
+
+---
+
+## Local Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```

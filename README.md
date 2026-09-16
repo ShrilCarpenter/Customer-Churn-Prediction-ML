@@ -1,6 +1,14 @@
 # Customer Churn Prediction System
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://customer-churn-prediction-usingml.vercel.app/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ShrilCarpenter/Customer-Churn-Prediction-ML)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![React](https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev)
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
 An end-to-end Machine Learning web application that predicts telecommunications customer churn in real time. Built with a high-performance **FastAPI** backend and an intuitive, responsive **React (Vite)** frontend.
+
+> 🌐 **Live Application**: [https://customer-churn-prediction-usingml.vercel.app/](https://customer-churn-prediction-usingml.vercel.app/)
 
 ---
 
@@ -201,7 +209,8 @@ Customer-Churn-Prediction/
    - **Name**: `VITE_API_URL`
    - **Value**: `https://<your-render-backend-url>.onrender.com` *(Do NOT include a trailing slash)*
 6. Click **Deploy**.
-7. In ~1 minute, your application will be live at your custom Vercel domain (e.g. `https://customer-churn-prediction-ml.vercel.app`)!
+7. In ~1 minute, your application will be live at your custom Vercel domain:
+   - **Production App**: [https://customer-churn-prediction-usingml.vercel.app/](https://customer-churn-prediction-usingml.vercel.app/)
 
 ---
 

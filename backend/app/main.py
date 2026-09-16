@@ -37,7 +37,7 @@ app = FastAPI(
 # ---------------------------------------------------------------------------
 ALLOWED_ORIGINS_RAW = os.getenv(
     "ALLOWED_ORIGINS",
-    "http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173,*",
+    "http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173,https://customer-churn-prediction-usingml.vercel.app,*",
 )
 raw_origins = [o.strip() for o in ALLOWED_ORIGINS_RAW.split(",") if o.strip()]
 if "*" in raw_origins:
